@@ -6,8 +6,9 @@ function compute()
     var amount = document.getElementById("principal").value;
     // if the input is 0 or negative an alert for the user and rest focus
     if (amount <= 0) {
-        alert("Enter a positive number")
-        frameElement.focus();
+        alert("Enter a positive number");
+        document.getElementById("principal").value = "";
+        document.getElementById("principal").focus();
         return false;
     }
     var principal = document.getElementById("principal").value;
